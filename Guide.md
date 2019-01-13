@@ -2,7 +2,7 @@
 
 This guide explains how to use this Tabletop system. It lets a player drag-and-drop cards around a scene. Cards can be placed in random position or in a *deck*. A *deck* is considered a collection of cards in which they can be laid down in different ways (in a stack, in a line, in a circle, etc.)
 
-# Set up
+## Set up
 
 Once the Unity Package is imported into your project, setting up a scene is easy.
 
@@ -10,7 +10,7 @@ The only `GameObject` required is the prefab `Finger` and it is located in *Tabl
 
 Make sure you use a camera with orthographic projection.
 
-# Decks
+## Decks
 
 To add a deck to the scene, simply add the `Deck` prefab into it. It is located in *Tabletop* → *Engine*.
 
@@ -26,7 +26,7 @@ Functions and values available for the `TabletopDeck` component:
 - `LayDown([int fromIndex],  [bool gradually])`: Force cards to lay down. There should be no need to call this.
 - `Shuffle()`
 
-# Deck Styles
+## Deck Styles
 
 There are 2 deck styles available.
 
@@ -45,7 +45,7 @@ The following are some values that may require a more detailed explanation:
 
 Deck Styles are not meant to be changed in real-time. Instead, you should create a new style and assign that to the deck.
 
-# Cards
+## Cards
 
 Cards are generated from a custom Editor Window located in *Window* → *Tabletop* → *Cards Database*.
 
@@ -57,6 +57,6 @@ Functions and values available for the `TabletopCard` component:
 
 Drag and drop cards in Play Mode using the left click. Click *F* to flip a card when dragging or hovering it.
 
-# Smooth animations
+## Smooth animations
 
 It is possible to change values for the smooth animations for all the `GameObject` that have a `SmoothAnimatimations` component attached.
